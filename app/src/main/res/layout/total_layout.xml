@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:id="@+id/mainlayout"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_alignParentTop="true"
+android:orientation="vertical"
+
+android:background="@android:color/white">
+<!--总公里数显示（相对布局便于对齐）-->
+<RelativeLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    >
+    <TextView
+        android:id="@+id/TotalRun"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/TotalRun"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="110sp"
+        android:paddingTop="20dp"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/KM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/TotalRun"
+        android:layout_toRightOf="@id/TotalRun"
+        android:layout_alignBottom="@id/TotalRun"
+        android:text="@string/KM"
+        android:textSize="25sp"
+        android:textColor="@android:color/holo_red_light"
+        >
+    </TextView>
+</RelativeLayout>
+<!--文本显示-->
+<TextView
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_gravity="center"
+    android:text="@string/TotalIno"
+    android:textStyle="italic"
+    android:textSize="30sp"
+    android:textColor="@android:color/darker_gray">
+</TextView>
+
+<GridLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:rowCount="1"
+    android:columnCount="6"
+    android:padding="10dp"
+    >
+    <!--第一行的六列定义 -->
+    <ImageView
+        android:id="@+id/TimesImage"
+        android:layout_gravity="start"
+        android:layout_row="0"
+        android:layout_column="0"
+        android:background="#0000"
+        android:scaleType="fitStart"
+        android:src="@drawable/timesimage"
+        android:adjustViewBounds="true"
+        android:paddingStart="5dp"
+        android:paddingEnd="15dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        >
+    </ImageView>
+    <TextView android:id="@+id/Times"
+        android:layout_gravity="end"
+        android:layout_row="0"
+        android:layout_column="1"
+        android:background="#0000"
+        android:text="@string/Times"
+        android:textSize="25sp"
+        android:paddingEnd="15dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="15dp"
+        />
+
+    <ImageView
+        android:id="@+id/speedImage"
+        android:layout_gravity="start"
+        android:layout_row="0"
+        android:layout_column="2"
+        android:background="#0000"
+        android:scaleType="fitStart"
+        android:src="@drawable/speedimage"
+        android:paddingStart="5dp"
+        android:paddingEnd="1dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="1dp"
+        />
+
+    <TextView android:id="@+id/Speed"
+        android:layout_gravity="end"
+        android:layout_row="0"
+        android:layout_column="3"
+        android:background="#0000"
+        android:text="@string/TotalAvgSpeed"
+        android:textSize="25sp"
+        android:paddingEnd="15dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="15dp"
+        />
+    <ImageView
+        android:id="@+id/coluliImage"
+        android:layout_gravity="start"
+        android:layout_row="0"
+        android:layout_column="4"
+        android:background="#0000"
+        android:scaleType="fitStart"
+        android:src="@drawable/coluliimage"
+        android:paddingStart="5dp"
+        android:paddingEnd="15dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="15dp"
+        />
+
+    <TextView android:id="@+id/TotalColuli"
+        android:layout_gravity="end"
+        android:layout_row="0"
+        android:layout_column="5"
+        android:background="#0000"
+        android:text="@string/TotalColuli"
+        android:textSize="25sp"
+        android:paddingEnd="20dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="20dp"
+        />
+    　　<!--第二行３个文本定义-->
+    <TextView android:id="@+id/TimesText"
+        android:layout_gravity="center"
+        android:layout_row="0"
+        android:background="#0000"
+        android:text="@string/TimesText"
+        android:textSize="20sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="italic"
+        android:layout_columnSpan="2"
+        />
+    <TextView android:id="@+id/SpeedText"
+        android:layout_gravity="center"
+        android:layout_row="0"
+        android:background="#0000"
+        android:text="@string/TotalAvgSpeedText"
+        android:textSize="20sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="italic"
+        android:layout_columnSpan="2"
+        />
+    <TextView android:id="@+id/ColuliText"
+        android:layout_gravity="center"
+        android:layout_row="0"
+        android:background="#0000"
+        android:text="@string/TotalColuliText"
+        android:textSize="20sp"
+        android:textColor="@android:color/darker_gray"
+        android:textStyle="italic"
+        android:layout_columnSpan="2"
+        />
+</GridLayout>
+    <LinearLayout android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageButton
+            android:id="@+id/Start"
+            android:paddingTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/beginrun_selector"
+         />
+        <TextView android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:layout_gravity="center"
+          android:text="@string/BeginRun"
+          android:textColor="#444"
+          android:textStyle="normal"
+          android:textSize="30sp"/>
+    </LinearLayout>
+
+
+</LinearLayout>

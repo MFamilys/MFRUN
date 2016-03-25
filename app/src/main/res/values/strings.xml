@@ -1,0 +1,30 @@
+ <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <string name="app_name">MFRUN</string>
+    <string name="action_settings">菜单</string>
+    <string name="TotalRun">0.00</string>
+    <string name="KM">公里</string>
+    <string name="TotalIno">TotalKilometers</string>
+    <string name="TotalAvgSpeed">00.00</string>
+    <string name="TotalAvgSpeedText">总平均配速</string>
+    <string name="Times">0</string>
+    <string name="TimesText">跑步次数</string>
+    <string name="TotalColuli">0</string>
+    <string name="TotalColuliText">总消耗热量</string>
+    <string name="run_distance">%1$.2f公里</string>
+    <string name="run_time">00:00:00</string>
+    <string name="run_speed">%1$.2f</string>
+    <string name="run_coluli">%1$.2f</string>
+    <string name="BeginRun">BeginRun!</string>
+    <string name="LeadMain">主页</string>
+    <string name="LeadFriend">朋友</string>
+    <string name="LeadTotal">跑步</string>
+    <string name="LeadAdess">定位</string>
+    <string name="LeadSetting">设置</string>
+    <string name="HotTopic">热门话题</string>
+    <string name="title_activity_aderss">Map</string>
+    <string name="title_activity_adess">AdessActivity</string>
+    <string name="title_activity_slide_button">SlideButtonActivity</string>
+    <string name="title_activity_main_layout_activity">main_layout_activity</string>
+
+    <string name="hello_world">Hello world!</string>
+</resources>

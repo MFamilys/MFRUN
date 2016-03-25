@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+        xmlns:circleImageView="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <!--用户动态布局-->
+    　
+      <!--左边框架：用户头像 -->
+       <LinearLayout android:layout_width="wrap_content"
+           android:layout_height="match_parent"
+           android:orientation="horizontal">
+       <com.example.mfamilys.mrun.ViewActivity.CircleImageView
+           android:id="@+id/user_header"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:layout_marginTop="6dp"
+           android:layout_marginLeft="6dp"
+           android:layout_marginStart="6dp"
+           android:src="@drawable/mfamilys"
+           circleImageView:border_width="2dp"
+           circleImageView:border_color="#00000000"
+           />
+        </LinearLayout>
+
+　　　　<!--右边框架-->
+       <LinearLayout
+           android:id="@+id/user_layout"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:orientation="vertical">
+        <!--用户名字-->
+        <TextView android:id="@+id/user_name"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:text="MFamilys"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:textColor="#99111111"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginStart="5dp"
+            />
+　　　　　<!--用户文本-->
+        <com.example.mfamilys.mrun.ViewActivity.ExpandTextView
+            android:id="@+id/expand_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandableTextView:maxCollapsedLines="1"
+            expandableTextView:animDuration="100"
+            expandableTextView:animAlphaStart="1">
+            <TextView
+                android:id="@+id/expandable_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16sp"
+                android:textColor="#666666" />
+            <ImageButton
+                android:id="@+id/expand_collapse"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="right"
+                android:background="@android:color/transparent"/>
+        </com.example.mfamilys.mrun.ViewActivity.ExpandTextView>
+　　　　　<!--用户图片-->
+           <com.example.mfamilys.mrun.ViewActivity.NoScollGridView
+               android:id="@+id/user_Image"
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content"
+               android:layout_gravity="center"
+               android:horizontalSpacing="1pt"
+               android:verticalSpacing="1pt"
+               android:numColumns="3"
+               android:paddingBottom="16dp"
+               android:paddingLeft="20dp"
+               android:paddingRight="20dp"/>
+
+       </LinearLayout>
+
+</LinearLayout>

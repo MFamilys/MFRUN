@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+<FrameLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/shape"
+    >
+<com.amap.api.maps2d.MapView
+    android:id="@+id/map"
+    android:layout_width="wrap_content"
+    android:layout_height="250sp"
+    />
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/shape"
+    android:orientation="vertical">
+    <ImageView android:id="@+id/ImgWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:contentDescription="天气图片"
+        />
+    <TextView android:id="@+id/TextWeather"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="end"
+        android:text="温度"
+        android:textColor="#ee22dddd"
+        android:textStyle="italic"
+        android:textSize="13sp"/>
+</LinearLayout>
+</FrameLayout>
+ <LinearLayout
+       android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="5dp"
+        >
+   <LinearLayout android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_gravity="center"
+     android:orientation="horizontal"
+     android:background="#33ffffff"
+     >
+   <ImageView android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/timeimage" />
+ <Chronometer
+     android:id="@+id/run_time"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textSize="25sp"
+     android:paddingRight="5sp"/>
+ <ImageView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/speedimage" />
+ <TextView
+     android:id="@+id/run_speed"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/run_speed"
+     android:textSize="25sp"
+     android:paddingRight="5sp"/>
+ <ImageView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:src="@drawable/coluliimage" />
+ <TextView
+     android:id="@+id/run_coluli"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/run_coluli"
+     android:textSize="25sp"/>
+ </LinearLayout>
+ <TextView
+     android:id="@+id/run_distance"
+     android:layout_width="match_parent"
+     android:layout_height="wrap_content"
+     android:gravity="center_horizontal"
+     android:text="@string/run_distance"
+     android:textColor="#efff2323"
+     android:textSize="45sp"
+     android:textStyle="bold"
+     />
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_marginTop="30sp"
+     android:layout_height="wrap_content"
+     >
+    <ImageButton
+      android:id="@+id/Run_StartOrStop"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_centerInParent="true"
+      android:background="#00ffffff"
+      android:src="@drawable/run_start"
+      android:contentDescription="开始按钮"
+    />
+     <ImageButton
+         android:id="@+id/Run_continue"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toLeftOf="@id/Run_StartOrStop"
+         android:layout_alignBottom="@id/Run_StartOrStop"
+         android:background="@drawable/run_continue"
+         android:visibility="invisible"
+         />
+     <ImageButton
+         android:id="@+id/Run_stop"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_toRightOf="@id/Run_StartOrStop"
+         android:layout_alignBottom="@id/Run_StartOrStop"
+         android:background="@drawable/run_over"
+         android:visibility="invisible"
+         />
+ </RelativeLayout>
+</LinearLayout>
+</LinearLayout>

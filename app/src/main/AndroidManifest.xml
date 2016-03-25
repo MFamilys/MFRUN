@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mfamilys.mrun" >
+
+    <!-- 添加权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+　　<uses-permission  android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <application
+        android:allowBackup="true"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="0d17810c512d218c3d4ebe4368e5b97c" />
+
+        <activity
+            android:name=".UiActivity.MainActivity"
+            android:icon="@drawable/appicon"
+            android:label="@string/app_name"
+            android:logo="@drawable/logo" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".UiActivity.adess_layout_Activity"
+            android:label="@string/title_activity_adess" >
+        </activity>
+        <activity
+            android:name=".ViewActivity.SlideButtonActivity"
+            android:label="@string/title_activity_slide_button" >
+        </activity>
+        <activity
+            android:name=".UiActivity.main_layout_Activity"
+            android:label="@string/title_activity_main_layout_activity" >
+        </activity>
+    </application>
+
+</manifest>

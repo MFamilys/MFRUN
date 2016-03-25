@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <!--自动变换的推荐栏 -->
+    <RelativeLayout xmlns:custom="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+       <com.daimajia.slider.library.SliderLayout
+            android:id="@+id/silder"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            custom:pager_animation="Accordion"
+            custom:auto_cycle="true"
+            custom:indicator_visibility="visible"
+            custom:pager_animation_span="1100"
+        />
+    </RelativeLayout>
+
+    <!-- 热门话题-->
+    <TextView android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#cc0000"
+        android:text="@string/HotTopic"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        android:textSize="18dp"/>
+
+    <!--可伸展的文本框列表项-->
+    <ListView android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:divider="#f00"
+        android:dividerHeight="2dp"
+        android:headerDividersEnabled="false"/>
+
+</LinearLayout>

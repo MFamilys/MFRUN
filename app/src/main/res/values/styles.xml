@@ -1,0 +1,32 @@
+<resources>
+
+    <style name="AppTheme" parent="android:Theme.Holo.Light.DarkActionBar">
+            <item name="android:actionBarStyle">@style/MRUN</item>
+            <item name="android:actionMenuTextAppearance">@style/MRUNMenuTittleStyle</item>
+        </style>
+        <style
+            name="MRUN"
+            parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+            <item name="android:titleTextStyle">@style/MRUNTittle</item>
+            <item name="android:background">@android:color/holo_red_dark</item>
+        </style>
+
+        <style
+            name="MRUNTittle"
+            parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title.Inverse">
+            <item name="android:textColor">@android:color/white</item>
+            <item name="android:textStyle">bold</item>
+            <item name="android:textSize">25sp</item>
+        </style>
+
+         <style
+             name="MRUNMenuTittleStyle"
+             parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title.Inverse">
+             <item name="android:textColor">@android:color/white</item>
+             <item name="android:textStyle">normal</item>
+             <item name="android:textSize">18sp</item>
+         </style>
+
+
+
+</resources>
